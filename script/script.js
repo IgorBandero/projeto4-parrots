@@ -58,6 +58,44 @@ function comparador() {
 }
 
 
+function saoIguais(carta1, carta2){
+    frenteCarta1 = carta1.children[1];
+    frenteCarta1 = frenteCarta1.children[0];
+    frenteCarta2 = carta2.children[1];
+    frenteCarta2 = frenteCarta2.children[0];
+    if (frenteCarta1.getAttribute("src") === frenteCarta2.getAttribute("src")){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+function novaJogada(carta){    
+    
+    if (!carta.classList.contains("virada")){
+        jogada++;
+        turnoJogada = jogada%2; //1 ou 0
+        if (turnoJogada === 1){
+            carta1 = carta;
+            virarCarta(carta);
+            
+        }
+        else {
+            carta2 = carta;
+            virarCarta(carta);
+            if (saoIguais(carta1, carta2)){
+                jogadasCertas++;
+            }
+            else {
+                setTimeout(() => { desvirarCarta(carta1);}, 1000);
+                setTimeout(() => { desvirarCarta(carta2);}, 1000);                
+            }
+        }
+    }
+}
+
+
 while (numeroCartas < 4 || numeroCartas > 14 || numeroCartas%2 !== 0) {
     numeroCartas = prompt("Com quantas cartas quer jogar? (obs: número par entre 4 e 14)");
     numeroCartas = Math.floor(numeroCartas);
