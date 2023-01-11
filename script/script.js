@@ -85,13 +85,16 @@ function novaJogada(carta){
             carta2 = carta;
             virarCarta(carta);
             if (saoIguais(carta1, carta2)){
-                jogadasCertas++;
+                jogadasCertas--;
             }
             else {
                 setTimeout(() => { desvirarCarta(carta1);}, 1000);
                 setTimeout(() => { desvirarCarta(carta2);}, 1000);                
             }
         }
+    }
+    if (jogadasCertas == 0) {
+        alert(`Você ganhou em ${jogada} jogadas!`);
     }
 }
 
