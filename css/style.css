@@ -58,15 +58,17 @@ h1 {
     height: 100px;
 }
 
-.carta:hover .carta-frente {
+.move-frente {
     transform: rotateY(0deg);
 }
 
-.carta:hover .carta-atras {
+.move-atras {
     transform: rotateY(-180deg);
 }
 
-
+.mudaCor {
+    background: yellowgreen;
+}
 
 /*
 
