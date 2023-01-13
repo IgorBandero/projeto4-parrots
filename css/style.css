@@ -19,8 +19,8 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 80vw;
-    margin: 28px auto 0 auto;
+    max-width: 80vw;
+    margin: 28px auto 40px auto;
 }
 
 .carta {
@@ -70,27 +70,73 @@ h1 {
     background: yellowgreen;
 }
 
-/*
-
-.container:first-child {
-    margin-left: 0px;
+.timer {
+    position: absolute;
+    top: 45px;
+    right: 55px;
 }
 
-*/
+.tempo {
+    font-family: 'Roboto';
+    font-size: 50px;
+    font-weight: bold;
+    color: #75B79E;
+}
 
 
+@media (max-width: 1000px){
+
+    h1{
+        font-size: 40px;
+        line-height: 50px;
+        margin-top: 45px;
+    }
+    .timer {
+        top: 20px;
+        right: 20px;
+    }
+    .tempo {
+        font-size: 35px;
+        font-weight: 600;
+    }
+}
+
+
+@media (max-width: 700px){
+
+    h1{
+        width: 250px;
+        margin: 45px auto 0 auto;
+    }
+    .tempo {
+        font-size: 30px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 450px){
+    .tempo {
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
 
 
 @media (max-width: 335px){
 
     h1{
-        font-size: 36px;
+        font-size: 35px;
         line-height: 42px;
+        margin-top: 45px;
     }
-
     .container {
         flex-direction: column;
         margin-top: 15px;
-        margin-bottom: 40px;
+    }
+    .timer {
+        top: 15px;
+        right: 15px;
     }
 }
+
+
