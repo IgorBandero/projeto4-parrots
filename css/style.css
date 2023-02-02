@@ -14,6 +14,11 @@ h1 {
     text-align: center;
 }
 
+#imagem-atras {
+    width: 80px;
+    height: 100px;
+}
+
 .container {
     display: flex;
     justify-content: center;

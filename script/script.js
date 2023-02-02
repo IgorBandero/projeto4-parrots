@@ -1,5 +1,5 @@
 let numeroCartas = 0;
-let listaCartas = ["./img/bobrossparrot.gif", "./img/bobrossparrot.gif", "./img/explodyparrot.gif", "./img/explodyparrot.gif", "./img/fiestaparrot.gif", "./img/fiestaparrot.gif", "./img/metalparrot.gif", "./img/metalparrot.gif", "./img/revertitparrot.gif", "./img/revertitparrot.gif", "./img/tripletsparrot.gif", "./img/tripletsparrot.gif", "./img/unicornparrot.gif", "./img/unicornparrot.gif"];
+let listaCartas = ["./img/imagem 01.png", "./img/imagem 01.png", "./img/imagem 02.png", "./img/imagem 02.png", "./img/imagem 03.png", "./img/imagem 03.png", "./img/imagem 04.png", "./img/imagem 04.png", "./img/imagem 05.png", "./img/imagem 05.png", "./img/imagem 06.png", "./img/imagem 06.png", "./img/imagem 07.png", "./img/imagem 07.png"];
 let jogadasCertas;
 let jogada = 0;
 let carta1;
